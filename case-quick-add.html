@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quick Add Modal Redesign — Raúl Ducret</title>
-<meta name="description" content="Quick Add increased adds to cart but reduced product exploration. How the modal was redesigned to resolve hesitation at the decision point.">
+<title>Redesigning Quick Add to build confidence before checkout — Raúl Ducret</title>
+<meta name="description" content="A modal redesign that separated product confidence from the decision to add to cart. +2.08% checkout starts.">
 <link rel="canonical" href="https://rauld.vercel.app/case-quick-add">
 <meta name="theme-color" content="#141414">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Quick Add Modal Redesign — Raúl Ducret">
-<meta property="og:description" content="Quick Add increased adds to cart but reduced product exploration. How the modal was redesigned to resolve hesitation at the decision point.">
+<meta property="og:title" content="Redesigning Quick Add to build confidence before checkout — Raúl Ducret">
+<meta property="og:description" content="A modal redesign that separated product confidence from the decision to add to cart. +2.08% checkout starts.">
 <meta property="og:url" content="https://rauld.vercel.app/case-quick-add">
 <meta property="og:image" content="https://rauld.vercel.app/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Quick Add Modal Redesign — Raúl Ducret">
-<meta name="twitter:description" content="Quick Add increased adds to cart but reduced product exploration. How the modal was redesigned to resolve hesitation at the decision point.">
+<meta name="twitter:title" content="Redesigning Quick Add to build confidence before checkout — Raúl Ducret">
+<meta name="twitter:description" content="A modal redesign that separated product confidence from the decision to add to cart. +2.08% checkout starts.">
 <meta name="twitter:image" content="https://rauld.vercel.app/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,92 +35,72 @@
     </div>
   </nav>
 
-  <a href="/" class="back-link">← Back to Work</a>
+  <a href="/" class="back-link">← All work</a>
 
   <header class="case-header">
-    <div class="section-label">A/B Testing · E-Commerce · Mood</div>
-    <h1><span style="color:var(--accent)">+2.08% Checkout Started</span> — Quick Add Modal Redesign</h1>
-    <p class="subhead">Quick Add increased adds to cart but reduced product exploration. Redesigned the modal's content and layout with the paid media team to resolve hesitation at the decision point, isolating the carousel as a separate test.</p>
-    <div class="tags-row">
-      <span class="tag tag-lg">A/B Testing</span>
-      <span class="tag tag-lg">E-Commerce</span>
-      <span class="tag tag-lg">Modal Redesign</span>
-      <span class="tag tag-lg">Cross-Functional</span>
-    </div>
+    <div class="section-label">Case study · Mood</div>
+    <h1>Redesigning Quick Add to build confidence before checkout</h1>
+    <p class="subhead">A modal redesign that separated product confidence from the decision to add to cart.</p>
+    <div class="tags-row"><span class="tag tag-lg">A/B Testing</span><span class="tag tag-lg">E-Commerce</span><span class="tag tag-lg">Modal</span></div>
+    <div style="margin-top:8px;"><a class="text-link" href="https://www.figma.com/design/NAca2s9krVBklFihROFeC8/Sections?node-id=389-17116">View Figma exploration ↗</a></div>
   </header>
 
-  <div class="figma-cta">
-    <p>Want to see the full visual exploration? The design iterations for this case live in Figma.</p>
-    <a href="#" class="btn btn-outline">Open in Figma ↗</a>
-  </div>
-
-  <div class="meta-grid">
-    <div class="meta-cell"><div class="meta-label">Role</div><div class="meta-value">Product Designer</div><div class="meta-sub">Designed the modal redesign and carousel</div></div>
-    <div class="meta-cell"><div class="meta-label">Team</div><div class="meta-value">PM, Engineers, Data</div></div>
-    <div class="meta-cell"><div class="meta-label">Timeline</div><div class="meta-value">2026</div></div>
-    <div class="meta-cell"><div class="meta-label">Platform</div><div class="meta-value">Web</div><div class="meta-sub">Responsive modal, desktop and mobile</div></div>
+  <div class="meta-grid" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+    <div class="meta-cell"><div class="meta-label">Role</div><div class="meta-value">Product Designer</div><div class='meta-sub'>Modal redesign and carousel</div></div>
+    <div class="meta-cell"><div class="meta-label">Team</div><div class="meta-value">PM, Engineering, Data</div></div>
+    <div class="meta-cell"><div class="meta-label">Platform</div><div class="meta-value">Web</div><div class='meta-sub'>Responsive modal, desktop and mobile</div></div>
   </div>
 
   <div class="section-block">
-    <div class="section-h2"><h2>Project Overview</h2></div>
+    <div class="section-h2"><h2>Context</h2></div>
     <div class="prose">
-      <p>A prior test, Quick Add from the PLP, had shipped with a conditional win. Adding to cart rose 6.0% and unique units added rose 2.4%, both significant, but product views dropped 3.9%. Everything downstream of the add, checkout started, orders completed, revenue, showed a positive but not statistically significant trend.</p>
-      <p>The read was that Quick Add accelerated early commitment but skipped the confidence-building step users normally get on the product page. The mandate that followed was to fix that at the modal itself, clearer confirmation, easier variant selection, and more control before checkout.</p>
+      <p>Quick Add made it easier to add products from the listing page, but it also reduced product exploration.</p>
+      <p>The challenge was to keep the speed of Quick Add without removing the information shoppers needed before committing.</p>
     </div>
   </div>
 
   <div class="section-block">
-    <div class="section-h2"><h2>Key Insights</h2></div>
-    <div class="insight-list">
-      <div class="insight-row"><div class="insight-num">01</div><div><div class="insight-title">Engagement vs. Confidence</div><div class="insight-desc">Quick Add moved people to act faster, but the drop in product views meant they explored less before committing.</div></div></div>
-      <div class="insight-row"><div class="insight-num">02</div><div><div class="insight-title">Missing Confirmation</div><div class="insight-desc">Without a clear confirmation or a way to edit the add, those incremental adds were less likely to reach checkout.</div></div></div>
-      <div class="insight-row"><div class="insight-num">03</div><div><div class="insight-title">Isolating Variables</div><div class="insight-desc">Shipping the redesign and the carousel together would make it impossible to tell which change drove any result.</div></div></div>
-      <div class="insight-row"><div class="insight-num">04</div><div><div class="insight-title">Unbounded Layout</div><div class="insight-desc">The modal had no max width, so above roughly 1920px it grew unbounded and broke visually.</div></div></div>
+    <div class="section-h2"><h2>Speed was not the problem. Confidence was.</h2></div>
+    <div class="prose">
+      <p>The first Quick Add test increased add-to-cart activity, but product views declined.</p>
+      <p>That suggested users were moving faster without necessarily having enough information to feel confident about the decision.</p>
     </div>
   </div>
 
   <div class="section-block">
-    <div class="section-h2"><h2>The Framework</h2><p>Two tests instead of one, so each change could be attributed on its own.</p></div>
-    <div class="framework-grid" style="--cols:2">
-      <div class="framework-cell"><div class="framework-eyebrow">Test 1 · Shipped</div><div class="framework-title">Content &amp; Layout Redesign</div><div class="framework-desc">Clearer CTAs, variant selection, and confirmation. Product image kept static to isolate this change.</div></div>
-      <div class="framework-cell"><div class="framework-eyebrow">Test 2 · Running</div><div class="framework-title">Product Image Carousel</div><div class="framework-desc">Runs on top of whichever layout won Test 1, so its effect can be measured on its own.</div></div>
-    </div>
+    <div class="section-h2"><h2>Separate the variables.</h2></div>
+    <div class="callout"><h3>Two experiments instead of one</h3><p>Instead of testing the modal redesign and image carousel together, I split them into two experiments.</p><p>The first focused on content, variant selection, and confirmation. The second isolates the product image carousel.</p><p>This made each test easier to interpret.</p></div>
   </div>
 
   <div class="section-block">
-    <div class="section-h2"><h2>Process</h2><p>From a static component to a shipped, monitored test.</p></div>
-    <div class="process-list">
-      <div class="process-row"><div class="process-num">01</div><div class="process-title">Scope Decision</div><div class="process-before">Before: carousel and redesign considered separately</div><div class="process-after">After: split into two isolated tests to protect causal clarity</div></div>
-      <div class="process-row"><div class="process-num">02</div><div class="process-title">Design Iteration</div><div class="process-before">Before: slow, disconnected review cycles</div><div class="process-after">After: fast Figma loop with paid media, copy fixed same day</div></div>
-      <div class="process-row"><div class="process-num">03</div><div class="process-title">Engineering Handoff</div><div class="process-before">Before: tickets waited in a backlog</div><div class="process-after">After: moved to dev to-do as soon as design was ready</div></div>
-      <div class="process-row"><div class="process-num">04</div><div class="process-title">Responsive Fix</div><div class="process-before">Before: layout broke above 1920px, no max width</div><div class="process-after">After: split into a quick fix ticket and the larger redesign ticket</div></div>
-    </div>
+    <div class="section-h2"><h2>Outcome</h2></div>
+    <div class="outcome"><div class="outcome-stat">+2.08% checkout starts</div><p>The redesigned modal increased checkout starts by 2.08%, with no guardrail violations. Order completion increased 1.03% and revenue per visitor increased 1.48%. The result was read as a conditional ship.</p><p>The product image carousel is scheduled as its own follow-up test.</p></div>
   </div>
 
   <div class="section-block">
-    <div class="section-h2"><h2>Status &amp; Next Step</h2></div>
-    <div class="status-card">
-      <div>
-        <div class="status-stat">Conditional Ship</div>
-        <div class="status-desc">Checkout started rose 2.08% (just at the edge of significance), order completion rose 1.03%, and revenue per visitor rose 1.48%. No guardrail was violated, and the redesign shipped to 100% of users with monitoring. The carousel is now testing on top of it, isolated.</div>
-      </div>
-      <div class="status-list">
-        <div class="status-item"><span>Checkout started</span><span>+2.08%</span></div>
-        <div class="status-item"><span>Order completed</span><span>+1.03%</span></div>
-        <div class="status-item"><span>Revenue per visitor</span><span>+1.48%</span></div>
-        <div class="status-item strong"><span>Carousel test</span><span>Running</span></div>
-      </div>
+    <div class="section-h2"><h2>What I learned</h2></div>
+    <div class="prose">
+      <p>Good experimentation is not only about creating a better interface.</p>
+      <p>It is also about making the experiment easier to understand.</p>
+      <p>Separating the redesign from the carousel meant we could learn what actually changed the behavior instead of treating two design decisions as one result.</p>
     </div>
   </div>
 
-  <div class="section-block prose" style="max-width:820px;">
-    <div class="section-h2"><h2>Reflection</h2></div>
-    <p>The pressure to ship one big change instead of two smaller ones is real, it feels slower to isolate variables. Keeping the carousel as a separate test meant a slightly slower rollout, but it meant the next decision about whether to keep the carousel will be backed by its own data, not a guess about which part of a combined change mattered.</p>
-    <p>The responsive bug taught a similar lesson, an urgent fix and a larger redesign are easy to conflate under time pressure. Separating them into two tickets got the fix out fast without putting the bigger test at risk.</p>
+  <div class="next-project">
+    <div class="section-label">Explore another project</div>
+    <a class="next-link" href="/case-quiz">Next: Removing friction from a product quiz →</a>
+    <a href="/" class="back-link">← All work</a>
   </div>
 
   <footer class="footer">
-    <a href="/" class="back-link" style="padding-top:0;">← Back to Work</a>
+    <div class="footer-brand">
+      <div class="nav-logo" style="font-size:18px;">R. DUCRET</div>
+      <div class="footer-tag">Product Designer · Growth · E-commerce · AI</div>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/raulducret/">LinkedIn</a>
+      <a href="mailto:ducret.raul@gmail.com">Email</a>
+    </div>
     <div class="footer-copy">© 2026 Raúl Ducret</div>
   </footer>
 </div>
