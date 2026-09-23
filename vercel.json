@@ -1,4 +1,16 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/cv", "destination": "/resume.pdf", "permanent": false },
+    { "source": "/resume", "destination": "/resume.pdf", "permanent": false }
+  ],
+  "headers": [
+    {
+      "source": "/resume.pdf",
+      "headers": [
+        { "key": "Content-Disposition", "value": "inline; filename=\"Raul-Ducret-Resume.pdf\"" }
+      ]
+    }
+  ]
 }

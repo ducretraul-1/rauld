@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Redesigning Quick Add to build confidence before checkout — Raúl Ducret</title>
+<title>Redesigning Quick Add to build confidence before checkout | Raúl Ducret</title>
 <meta name="description" content="A modal redesign that separated product confidence from the decision to add to cart. +2.08% checkout starts.">
 <link rel="canonical" href="https://rauld.vercel.app/case-quick-add">
 <meta name="theme-color" content="#141414">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Redesigning Quick Add to build confidence before checkout — Raúl Ducret">
+<meta property="og:title" content="Redesigning Quick Add to build confidence before checkout | Raúl Ducret">
 <meta property="og:description" content="A modal redesign that separated product confidence from the decision to add to cart. +2.08% checkout starts.">
 <meta property="og:url" content="https://rauld.vercel.app/case-quick-add">
 <meta property="og:image" content="https://rauld.vercel.app/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Redesigning Quick Add to build confidence before checkout — Raúl Ducret">
+<meta name="twitter:title" content="Redesigning Quick Add to build confidence before checkout | Raúl Ducret">
 <meta name="twitter:description" content="A modal redesign that separated product confidence from the decision to add to cart. +2.08% checkout starts.">
 <meta name="twitter:image" content="https://rauld.vercel.app/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,8 +23,10 @@
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css">
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <div class="container">
   <nav class="nav">
@@ -32,18 +34,26 @@
     <div class="nav-links">
       <a href="/#work">Work</a>
       <a href="/about">About</a>
+      <a href="/resume.pdf" class="nav-hide-sm">Resume</a>
+      <a href="mailto:ducret.raul@gmail.com" class="nav-cta">Email me</a>
     </div>
   </nav>
 
   <a href="/" class="back-link">← All work</a>
 
-  <header class="case-header">
+  <header class="case-header" id="main">
     <div class="section-label">Case study · Mood</div>
     <h1>Redesigning Quick Add to build confidence before checkout</h1>
     <p class="subhead">A modal redesign that separated product confidence from the decision to add to cart.</p>
     <div class="tags-row"><span class="tag tag-lg">A/B Testing</span><span class="tag tag-lg">E-Commerce</span><span class="tag tag-lg">Modal</span></div>
     <div style="margin-top:8px;"><a class="text-link" href="https://www.figma.com/design/vOwP4dmYSWBlf2BdIOiiNX/Ra%C3%BAl-Ducret-%C2%B7-Case-Studies-2026?node-id=7-608">View Figma exploration ↗</a></div>
   </header>
+
+  <div class="tldr" aria-label="Summary">
+    <div class="tldr-cell"><div class="tldr-label">Problem</div><p>Quick Add increased add-to-cart activity, but product views dropped. Shoppers were moving faster without enough information to feel confident.</p></div>
+    <div class="tldr-cell"><div class="tldr-label">What I did</div><p>I redesigned the modal’s content, variant selection, and confirmation, and moved the image carousel into its own follow-up test so each result could be read clearly.</p></div>
+    <div class="tldr-cell"><div class="tldr-label">Result</div><p>+2.08% checkout starts, +1.03% order completion, and +1.48% revenue per visitor, with no guardrail violations.</p></div>
+  </div>
 
   <div class="meta-grid" style="grid-template-columns:repeat(3,minmax(0,1fr))">
     <div class="meta-cell"><div class="meta-label">Role</div><div class="meta-value">Product Designer</div><div class='meta-sub'>Modal redesign and carousel</div></div>
@@ -86,6 +96,15 @@
     </div>
   </div>
 
+  <section class="contact-block">
+    <h2>Hiring for growth or e-commerce design?</h2>
+    <p>I’m open to product design roles in DTC, e-commerce, and SaaS. Email is the fastest way to reach me.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="mailto:ducret.raul@gmail.com">Email me</a>
+      <a class="btn btn-outline" href="/resume.pdf">Download resume</a>
+    </div>
+  </section>
+
   <div class="next-project">
     <div class="section-label">Explore another project</div>
     <a class="next-link" href="/case-quiz">Next: Removing friction from a product quiz →</a>
@@ -100,6 +119,7 @@
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/raulducret/">LinkedIn</a>
       <a href="mailto:ducret.raul@gmail.com">Email</a>
+      <a href="/resume.pdf">Resume</a>
     </div>
     <div class="footer-copy">© 2026 Raúl Ducret</div>
   </footer>
