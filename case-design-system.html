@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Building the foundations for a scalable design system | Raúl Ducret</title>
-<meta name="description" content="Creating a shared design language across Figma, engineering, and AI-generated experiences at Mood.">
+<title>Building a shared design system across Figma, code, and AI | Raúl Ducret</title>
+<meta name="description" content="One naming system and one token structure for design, engineering, and AI-generated experiences at Mood.">
 <link rel="canonical" href="https://rauld.vercel.app/case-design-system">
 <meta name="theme-color" content="#141414">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Building the foundations for a scalable design system | Raúl Ducret">
-<meta property="og:description" content="Creating a shared design language across Figma, engineering, and AI-generated experiences at Mood.">
+<meta property="og:title" content="Building a shared design system across Figma, code, and AI | Raúl Ducret">
+<meta property="og:description" content="One naming system and one token structure for design, engineering, and AI-generated experiences at Mood.">
 <meta property="og:url" content="https://rauld.vercel.app/case-design-system">
 <meta property="og:image" content="https://rauld.vercel.app/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Building the foundations for a scalable design system | Raúl Ducret">
-<meta name="twitter:description" content="Creating a shared design language across Figma, engineering, and AI-generated experiences at Mood.">
+<meta name="twitter:title" content="Building a shared design system across Figma, code, and AI | Raúl Ducret">
+<meta name="twitter:description" content="One naming system and one token structure for design, engineering, and AI-generated experiences at Mood.">
 <meta name="twitter:image" content="https://rauld.vercel.app/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,20 +43,20 @@
 
   <header class="case-header" id="main">
     <div class="section-label">Case study · Mood</div>
-    <h1>Building the foundations for a scalable design system</h1>
-    <p class="subhead">Creating a shared design language across Figma, engineering, and AI-generated experiences.</p>
+    <h1>Building a shared design system across Figma, code, and AI</h1>
+    <p class="subhead">One naming system and one token structure for design, engineering, and AI-generated experiences.</p>
     <div class="tags-row"><span class="tag tag-lg">Design System</span><span class="tag tag-lg">Tokens</span><span class="tag tag-lg">Naming</span></div>
     <div style="margin-top:8px;"><a class="text-link" href="https://www.figma.com/design/vOwP4dmYSWBlf2BdIOiiNX/Ra%C3%BAl-Ducret-%C2%B7-Case-Studies-2026?node-id=7-461">View Figma exploration ↗</a></div>
   </header>
 
   <div class="tldr" aria-label="Summary">
     <div class="tldr-cell"><div class="tldr-label">Problem</div><p>Features were being designed and built with different colors, type, spacing, and naming, so every new screen added more inconsistency.</p></div>
-    <div class="tldr-cell"><div class="tldr-label">What I did</div><p>I led the foundations: a naming system agreed with engineering, a gradual token migration starting with spacing, and documented exceptions where the platform could not match the design.</p></div>
-    <div class="tldr-cell"><div class="tldr-label">Result</div><p>Foundations and naming are in place, spacing tokens are in production, and color tokens are rolling out next.</p></div>
+    <div class="tldr-cell"><div class="tldr-label">What I did</div><p>I led the system from the base up: a naming convention agreed with engineering, a token structure introduced in steps, starting with spacing and then color, and a written record of where the platform sets the limits.</p></div>
+    <div class="tldr-cell"><div class="tldr-label">Result</div><p>Design and engineering share one naming system and one token structure, and the exceptions the platform requires are documented.</p></div>
   </div>
 
   <div class="meta-grid" style="grid-template-columns:repeat(3,minmax(0,1fr))">
-    <div class="meta-cell"><div class="meta-label">Role</div><div class="meta-value">Design Systems Lead</div><div class='meta-sub'>Foundations, naming, and token rollout</div></div>
+    <div class="meta-cell"><div class="meta-label">Role</div><div class="meta-value">Product Designer</div><div class='meta-sub'>Led the naming, tokens, and platform rules</div></div>
     <div class="meta-cell"><div class="meta-label">Team</div><div class="meta-value">Design, Engineering</div></div>
     <div class="meta-cell"><div class="meta-label">Platform</div><div class="meta-value">Figma, Shopify</div></div>
   </div>
@@ -65,8 +65,8 @@
     <div class="section-h2"><h2>Context</h2></div>
     <div class="prose">
       <p>Mood did not have a shared design foundation, so features were being designed and built with different colors, typography, spacing, and naming conventions.</p>
-      <p>Before scaling the system, I focused on the foundations.</p>
-      <p>The goal was to create a shared language that design and engineering could agree on before introducing more components and patterns.</p>
+      <p>I started with the layer underneath the components: the values and names every component depends on.</p>
+      <p>The goal was a shared language that design and engineering could agree on, so every new component and pattern would build on the same base.</p>
     </div>
   </div>
 
@@ -83,8 +83,8 @@
   <div class="section-block">
     <div class="section-h2"><h2>Three layers</h2></div>
     <div class="framework-grid" style="--cols:3">
-      <div class="framework-cell"><div class='framework-eyebrow'>01</div><div class="framework-title">Foundations</div><div class='framework-desc'>Color, type, spacing, opacity, and naming.</div></div>
-      <div class="framework-cell"><div class='framework-eyebrow'>02</div><div class="framework-title">Token migration</div><div class='framework-desc'>Introduce the system gradually, starting with spacing and then color.</div></div>
+      <div class="framework-cell"><div class='framework-eyebrow'>01</div><div class="framework-title">Foundations</div><div class='framework-desc'>Color, type, spacing, opacity, and a naming convention agreed with engineering.</div></div>
+      <div class="framework-cell"><div class='framework-eyebrow'>02</div><div class="framework-title">Token migration</div><div class='framework-desc'>Tokens enter the product in steps, starting with spacing and then color, so each change can be checked on real screens.</div></div>
       <div class="framework-cell"><div class='framework-eyebrow'>03</div><div class="framework-title">Platform constraints</div><div class='framework-desc'>Document where the product cannot reproduce the design exactly, and agree on the exception with engineering.</div></div>
     </div>
   </div>
@@ -96,7 +96,7 @@
 
   <div class="section-block">
     <div class="section-h2"><h2>Outcome</h2></div>
-    <div class="outcome"><p>The foundation and naming system were established, and spacing tokens were shipped into production.</p><p>Color tokens are being rolled out next.</p></div>
+    <div class="outcome"><p>Design and engineering now work from one naming system and a token structure with a clear order: spacing first, then color.</p><p>Spacing tokens went into the product first, which gave the team a real-screen check before each new set.</p><p>Where the platform sets a limit, as with Shopify Checkout, the exception is written down and agreed, so nobody has to rediscover it screen by screen.</p></div>
   </div>
 
   <div class="section-block">

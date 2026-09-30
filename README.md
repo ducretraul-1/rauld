@@ -5,7 +5,7 @@ Static site, no build step. Six pages, one shared stylesheet, deployed on Vercel
 - `index.html`: Home
 - `about.html`: About
 - `case-direct-response.html`: Touchbase, AI-assisted landing page workflow
-- `case-design-system.html`: Design system foundations
+- `case-design-system.html`: Shared design system
 - `case-quick-add.html`: Quick Add modal redesign
 - `case-quiz.html`: Product quiz UX audit
 - `resume.pdf`: Resume, also available at `/cv` and `/resume`
